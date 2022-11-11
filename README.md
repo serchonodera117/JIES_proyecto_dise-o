@@ -1,1 +1,1 @@
-# JIES_proyecto_dise-o
+# JIES_proyecto_diseño
