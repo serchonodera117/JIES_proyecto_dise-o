@@ -5,9 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
    <link rel="icon" type="x-icon" alt="icon logo" sizes="60x60"href="Iconos/Logo_con_fondo.png">
+   <link rel="stylesheet" type="text/css" href="estilos/index.css">
     <title>JIES</title>
 </head>
 <body>
-    <header class="header"></header>
-</body>
-</html>
+    <div class="grid-container">
+       <div class="grid-header">
+         <img class="logo" alt="logo" src="Iconos/Logo_con_fondo.png">
+
+            <button class="btn-inicio">Inicio</button>
+
+            <ul class="list-btn">
+                <li>
+                    <button class="btn-list-header">Juegos</button>
+                </li>
+                <li>
+                    <button class="btn-list-header">Material</button>
+                </li>
+                <li>
+                    <button class="btn-list-header">Ayuda</button>
+                </li>
+
+            </ul>
+         </div>
+        <div class="grid-body">
+            <div id="div-body1">
+                <ol id="ol-menu" class="menu">
+                    <li class="list-element">
+                        <button id="1" class="btn-menu" onclick="one()">¿Cual con cual?</button>
+                    </li>
+                    <li class="list-element">
+                        <button id="2" class="btn-menu" onclick="two()">Pon en su lugar</button>
+                    </li>
+                    <li class="list-element">
+                        <button  id="3" class="btn-menu" onclick="three()">Escribe</button>
+                    </li>
+                    <li class="list-element">
+                        <button  id="4" class="btn-menu" onclick="four()">Respóndeme</button>
+                    </li>
+                    <li class="list-element">
+                        <button id="5" class="btn-menu" onclick="five()">Escribir la hora</button>
+                    </li>
+                    <li class="list-element">
+                        <button id="6" class="btn-menu" onclick="six()">Cambio uno por otro</button>
+                    </li>
+                    <li class="list-element">
+                        <button id="7" class="btn-menu" onclick="seven()">Coloca su lugar</button>
+                    </li>
+                    <li class="list-element">
+                        <button id="8"class="btn-menu" onclick="eighth()">Escribe</button>
+                    </li>
+                </ol>
+            </div>    
+            <iframe id="div-iframe-container" class="grid-body" src="paginas/con_cual.html"></iframe>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body> 

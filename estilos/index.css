@@ -1,0 +1,101 @@
+/*--------------- general*/
+:root{
+    --solid_background: #0076F5;
+    --page-title: #400DFF;
+    --subtitle-instructions:  #2135AD;
+    --btn-text-menu: #2135AD;
+    --withoutBG:rgba(236, 12, 12, 0);
+}
+
+*{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;   
+}
+body{background-color: #ffffff; }
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header" "header" "header" "header"
+    "body" "body" "body" "body"
+    ;
+}
+
+/*---------------------------------------------------Header*/
+.grid-header {
+    display: flex;
+    grid-area: header;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--solid_background);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 4rem;
+}
+.logo{
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    margin-left: 2rem;
+}
+.btn-inicio, .btn-list-header{
+    color:white;
+    margin-left: 3rem;
+    background-color: var(--withputBG);
+    border: var(--withputBG);
+    font-size: 20px;
+    transition: 1s;
+    height: 4rem;
+}.btn-inicio:hover, .btn-list-header:hover{
+    background-color: rgb(156, 134, 248);
+    font-size: 25px;
+}
+.list-btn {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    margin-right: 7rem;
+}
+/*----------------------------------------------------------------------------body*/
+.grid-body{
+    grid-area: body;
+    display:flex;
+}
+/*--------------------------------------------- menu games */
+#div-body1 {
+    width: 30%;
+    border-right: 4px solid var(--page-title);
+    margin-top: 4rem;
+}
+.menu, button{
+  background-color: var(--withoutBG);
+  color: var(--btn-text-menu);
+  transition: 0.3s;
+}
+.btn-menu {
+    border-color: var(--withoutBG);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}.btn-menu:active{
+    background-color: rgb(230, 242, 253)
+}
+.list-element:hover,.btn-menu:hover{
+    font-weight: bold;
+}
+.btn-menu:focus{
+    outline: 3px solid #0076F5;
+    font-weight: bold;
+}
+
+/*--------------------------------------------- iframe page */
+#div-iframe-container {
+    width:65%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
