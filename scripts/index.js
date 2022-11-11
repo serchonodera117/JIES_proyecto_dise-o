@@ -42,3 +42,14 @@ function changeBtnColor(n){
     seventhOption.style.fontWeight= (n==7)?"bold":"normal";
     eighthOption.style.fontWeight= (n==8)?"bold":"normal";
 }
+
+let menuHamburguesa = document.getElementById("div-body1");
+let mostrando=false
+function showhidemenu(){
+      mostrando = !mostrando
+      menuHamburguesa.style.display=(mostrando)?"block":"none";
+      console.log("mostrando",mostrando);
+}
+
+
+

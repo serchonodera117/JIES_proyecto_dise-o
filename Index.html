@@ -12,7 +12,6 @@
     <div class="grid-container">
        <div class="grid-header">
          <img class="logo" alt="logo" src="Iconos/Logo_con_fondo.png">
-
             <button class="btn-inicio">Inicio</button>
 
             <ul class="list-btn">
@@ -27,9 +26,13 @@
                 </li>
 
             </ul>
-         </div>
+        <label for="mostrarmenu">
+            <img id="img-menu-hamburhuesa" class="hamburguer-menu" alt="Menu hamburguesa" src="Iconos/lista.png" ><!--onclick="showhidemenu()""-->
+        </label>
+        <input type="checkbox" id="mostrarmenu"> 
+        </div>
         <div class="grid-body">
-            <div id="div-body1">
+            <div id="div-body1" class="body-menu">
                 <ol id="ol-menu" class="menu">
                     <li class="list-element">
                         <button id="1" class="btn-menu" onclick="one()">¿Cual con cual?</button>
