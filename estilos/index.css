@@ -135,6 +135,9 @@ body{background-color: #ffffff; }
      width:35%;
      display: none;
     }
+    #div-iframe-container{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px){
     .btn-inicio{display: none;}
@@ -142,5 +145,4 @@ body{background-color: #ffffff; }
 
 @media screen and (min-width: 850){
     #div-body1{display: block;}
-    body{background-color: red;}
 }
