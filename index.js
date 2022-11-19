@@ -23,6 +23,7 @@ function two(){
 function three(){
  changeBtnColor(3);
  myIframe.src = "../paginas/escribe.html"
+
 }
 
 function four(){changeBtnColor(4);}
@@ -49,5 +50,6 @@ function showhidemenu(){
       menuHamburguesa.style.display=(mostrando)?"block":"none";
       console.log("mostrando",mostrando);
 }
+
 
 
