@@ -13,16 +13,16 @@ let myIframe = document.getElementById("div-iframe-container");
 
 function one(){
  changeBtnColor(1);
- myIframe.src = "../paginas/con_cual.html"
+ myIframe.src = "./paginas/con_cual.html"
 }
 function two(){
  changeBtnColor(2);
- myIframe.src = "../paginas/pon_en_su_lugar.html"
+ myIframe.src = "./paginas/pon_en_su_lugar.html"
 
 }
 function three(){
  changeBtnColor(3);
- myIframe.src = "../paginas/escribe.html"
+ myIframe.src = "./paginas/escribe.html"
 
 }
 
