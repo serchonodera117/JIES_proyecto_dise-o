@@ -14,12 +14,62 @@
         <div class="middle"></div>
     </div> -->
 
-    <div class="game_container">
+    <div id="instuctions1" class="game_container">
         <h2>1.- ¿con cual?</h2>
         <p>Indicaciones:</p>
         <p>Relaciona la palabra con su imágen correspondiente.</p>
         <div class="video-container"></div>
-        <button id="btn-jugar">Jugar</button>
+        <button  class="jugar" onclick="btn_cual()">Jugar</button>
     </div>
+    <div id="game1" class="game_container" style="display:block">
+        <h2>1.- ¿con cual?</h2>
+        <table class="table" border="0" style="margin-right:auto; margin-left:auto; display: table;" cellspacing="20px">
+            <tr>
+                <td class="cell-img">
+                    <img src="../imagenes/casa.PNG" class="images1">
+                </td>
+                <td>
+                    <input type="radio" name="opción" value="0">
+                </td>
+                <td class="espacio"></td>
+                <td>
+                    <input type="radio" name="opción" value="0">
+                </td>
+                <td class="nombre">
+                    Luis
+                </td>
+            </tr>
+            <tr>
+                <td class="cell-img">
+                    <img src="../imagenes/niño.PNG" class="images1">
+
+                </td>
+                <td>
+                    <input type="radio" name="opción" value="0">
+                </td>
+                <td class="espacio"></td>
+                <td>
+                    <input type="radio" name="opción" value="0">
+                </td>
+                <td class="nombre">cumpeaños</td>
+            </tr>
+            <tr>
+                <td class="cell-img">
+                    <img src="../imagenes/pastel.PNG" class="images1">
+                </td>
+                <td>
+                    <input type="radio" name="opción" value="0">
+                </td>
+                <td class="espacio"></td>
+                <td>
+                    <input type="radio" name="opción" value="0">
+                </td>
+                <td class="nombre">casa</td>
+            </tr>
+        </table>
+        <button  class="jugar">Revisar</button>
+        <button class="volver"  onclick="btn_volver()">volver a las instrucciones</button>
+    </div>
+    <script type="text/javascript" src="../scripts/games.js"></script>
 </body>
 </html>

@@ -88,7 +88,8 @@ p{
     background-color: rgb(198, 171, 171);
     margin-top: 2rem;
 }
-#btn-jugar{
+.jugar{
+    cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -102,10 +103,40 @@ p{
     margin-right: auto;
     display: table;
     margin-top: 3rem;
-    cursor: pointer;
-    transition: 1s;
-}#btn-jugar:hover{
+    transition: 0.3s;
+}.jugar:hover{
     background-color: rgb(238, 141, 253);
     transform: translateY(-10px);
     box-shadow: 0px 3px 8px 5px rgb(146, 140, 140);
+}.jugar:focus{
+    background-color: rgb(226, 175, 239);
+}
+
+.volver{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 1rem;
+    background-color: var(--withoutBG);
+    border:0px;
+    color: var(--page-title);
+    cursor: pointer;
+    transition: 0.3s;
+}.volver:hover{
+    scale: 1.1;
+}
+
+.images1{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    box-shadow: 0px 0px 11px 12px rgb(0,0,0,0)
+    margin 5px;
+}.nombre,.cell-img{
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px rgb(41, 35, 35);
+} .nombre{
+    width: 10rem;
+}.espacio{
+    width: 40%;
 }

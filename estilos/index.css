@@ -108,6 +108,7 @@ body{background-color: #ffffff; }
 /*--------------------------------------------- iframe page */
 #div-iframe-container {
     width:65%;
+    height: 40rem;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 1rem;
