@@ -1,4 +1,13 @@
-.container{
+:root{
+    --solid_background: #0076F5;
+    --page-title: #400DFF;
+    --subtitle-instructions:  #2135AD;
+    --btn-text-menu: #2135AD;
+    --withoutBG:rgba(236, 12, 12, 0);
+}
+
+/*-------------------------------------------------Pokeball*/
+/* .container{
     content: " ";
     background-color: white;
     height: 10rem;
@@ -54,4 +63,49 @@
     border-radius: 0 0 50rem 50rem;
     margin-left: 10%;
     margin-top: 50%;
+} */
+
+
+/*Pagina introducción con cual*/
+.game_container {
+    color: var(--page-title); 
+    display: block;  
+    align-items: center;
+}
+p,h2{
+    text-align: center
+}
+
+p{
+    margin:0;
+}
+.video-container {
+    content: "";
+    height: 15rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(198, 171, 171);
+    margin-top: 2rem;
+}
+#btn-jugar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background-color: #9e49fa;
+    color: white;
+    border: 0px;
+    box-shadow: 0px 0px 7px 2px rgb(202, 195, 195);
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 1s;
+}#btn-jugar:hover{
+    background-color: rgb(238, 141, 253);
+    transform: translateY(-10px);
+    box-shadow: 0px 3px 8px 5px rgb(146, 140, 140);
 }
