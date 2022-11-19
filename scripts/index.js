@@ -50,6 +50,6 @@ function showhidemenu(){
       menuHamburguesa.style.display=(mostrando)?"block":"none";
       console.log("mostrando",mostrando);
 }
-
+//-----------------
 
 
