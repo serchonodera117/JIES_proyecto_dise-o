@@ -8,14 +8,41 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="game_container">
+    <div id="instructions2" class="game_container">
         <h2>2.- Pon en su lugar:</h2>
         <p>Indicaciones:</p>
         <p>Vuelve a llenar la invitación con la información de Luis. Arrastra 
             los elementos donde corresponda
         </p>
         <div class="video-container"></div>
-        <button id="btn-jugar2"class="jugar">Jugar</button>
+        <button id="btn-jugar2"class="jugar" onclick="btn_arrastrar()">Jugar</button>
     </div>
+    <div id="game2" class="game_container" style="display: none;">
+        <h2>2.- Pon en su Lugar</h2>
+        <div class="img-container">
+            <div class="invitation">
+                <img class="invitacion" src="../imagenes/Invitacion.PNG" alt="Invitacion">
+            </div>
+            <div class="dragable-img">
+                   <div class="row-m">
+                      <img class="little-img" src="../imagenes/hora.PNG" alt="hora" />
+                     <img class="little-img" src="../imagenes/fecha.PNG" alt="fecha" />
+                   </div>
+                     <div class="row">
+                        <img class="calle" src="../imagenes/calle.PNG" alt="Calle">
+                     </div>
+                     <div class="row-m">
+                        <img class="little-img" src="../imagenes/nombre.PNG" alt="Nombre">
+                        <img class="little-img" src="../imagenes/apellido.PNG" alt="Apellido">
+                    </div>
+            </div>
+        </div>
+        <div style="display: flex;">
+        <button class="volver" onclick="btn_volver2()">Volver a las instrucciones</button>
+        <button class="jugar">Revisar</button>
+        </div>
+    </div>
+
+    <script src="../scripts/games.js"></script>
 </body>
 </html>

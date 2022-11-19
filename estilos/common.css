@@ -69,7 +69,9 @@
 /*Pagina introducción con cual*/
 .game_container {
     color: var(--page-title); 
-    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
     align-items: center;
 }
 p,h2{
@@ -139,4 +141,64 @@ p{
     width: 10rem;
 }.espacio{
     width: 40%;
+}
+
+
+/*-----------------pantalla con cual*/
+.img-container{
+    display:flex;
+}.dragable-img{
+    display: block;
+}.row-m{
+    display: flex;
+}
+.little-img{
+    cursor:pointer;
+    width:  6rem;
+    height: 5rem;
+    object-fit: fill;
+    margin: 15px;
+    box-shadow: 0px 0px 5px 3px rgb(218, 214, 214);
+    transition: 0.3s;
+}.invitacion{
+    transition: 0.3s;
+    cursor:pointer;
+    object-fit: fill;
+    width: 80%;
+    height: 27rem;
+    margin: 15px;
+    box-shadow: 0px 0px 5px 3px rgb(218, 214, 214);
+}.calle{
+    cursor:pointer;
+    margin: 15px;
+    height: 10%;
+    width: 50%;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 3px rgb(218, 214, 214);
+}.invitacion:hover, .calle:hover,.little-img:hover{
+    scale: 1.1;
+    transition: translateY(-10px)
+}
+
+/*---------------------------------------------media screen query*/
+@media screen and (max-width: 500px){
+    .images1{
+        height: 5rem;
+        width: 5rem;
+    }
+    .video-container{
+        width: 20rem;
+        height: 10rem;
+    }
+    .invitacion{
+        width: 13rem;
+        height: 25rem;
+    }.nombre{width: 5rem;}
+    .row-m{
+        display:grid;
+    }.little-img{
+        height: 4rem;
+        width: 3rem;
+    }
+
 }
