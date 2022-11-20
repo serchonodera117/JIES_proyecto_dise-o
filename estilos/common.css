@@ -82,13 +82,54 @@ p{
     margin:0;
 }
 .video-container {
+    transition: all 0.5s;
     content: "";
     height: 15rem;
     width: 25rem;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(198, 171, 171);
+    background-color: rgb(28, 18, 39);
     margin-top: 2rem;
+    cursor: pointer;
+    border-bottom: 15px solid rgb(239, 222, 222);
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(../imagenes/Signal_language.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}.video-container::before {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: 5.6rem;
+    margin-bottom:5.6rem;
+    margin-left: 10.3rem;
+    display: table;
+    z-index: 1;
+    position: absolute;
+}.video-container::after{
+    content: "";
+    width: 0rem;
+    height:0rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-left: 20px solid rgb(255, 255, 255);
+    border-right: 10px solid rgba(255, 255, 255, 0);
+    border-top: 15px solid rgba(255, 255, 255, 0);
+    border-bottom: 15px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    margin-left: 11.4rem;
+    margin-right: 11.4%;
+    margin-top: 6.3rem;
+    margin-bottom: 6.3rem;
+    display: table;
+    z-index: 1;
+    position: absolute; 
+}.video-container:hover{
+    background-color: rgb(40, 22, 50);
+    border-bottom: 15px solid #979fa7;
 }
 .jugar{
     cursor: pointer;
@@ -180,6 +221,17 @@ p{
     transition: translateY(-10px)
 }
 
+/*game 3*/
+.text_container{
+    margin-top: 1rem;
+}.invitacion2{
+    transition: 0.4s;
+    object-fit: cover;
+    width: 30rem;
+    height: 40rem;
+    box-shadow: 0px 0px 5px 2px rgb(212, 206, 206); 
+}
+
 /*---------------------------------------------media screen query*/
 @media screen and (max-width: 500px){
     .images1{
@@ -189,6 +241,16 @@ p{
     .video-container{
         width: 20rem;
         height: 10rem;
+    }.video-container::before{
+        margin-left: 8.5rem;
+        margin-right: 8.5rem;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }.video-container::after{
+        margin-left: 9.6rem;
+        margin-right: 9.6rem;
+        margin-top: 4.3rem;
+        margin-bottom: 4.3rem;
     }
     .invitacion{
         width: 13rem;
@@ -200,5 +262,8 @@ p{
         height: 4rem;
         width: 3rem;
     }
-
+    .invitacion2{
+        width: 15rem;
+        height: 20rem;
+    }
 }

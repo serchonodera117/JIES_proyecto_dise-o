@@ -8,12 +8,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="game_container">
+    <div id="instructions3" class="game_container">
         <h2>3.- Escribe:</h2>
         <p>Indicaciones:</p>
         <p>Escribe la fecha y hora analizando la información presentada.</p>
         <div class="video-container"></div>
-        <button id="btn-jugar3"class="jugar">Jugar</button>
+        <button id="btn-jugar3"class="jugar" onclick="jugar3()">Jugar</button>
     </div>
+    <div id="game3" class="game_container" style="display: none;">
+        <h2>3.- Escribe:</h2>
+        <img class="invitacion2" src="../imagenes/Invitacion2.PNG">
+        <div class="text_container">
+            <p>Hora: 11:pm</p>
+            <p>Fecha: 13 de septiembre</p>
+            <p>Hora: 11:pm</p>
+             <p>Lugar: Escuela</p>
+       </div>
+       <div style="display: flex;">
+        <button class="volver" onclick="volver3()">Volver a las instrucciones</button>
+        <button class="jugar" >Revisar</button>
+       </div>
+    </div>
+
+    <script type="text/javascript" src="../scripts/games.js"></script>
 </body>
 </html>
