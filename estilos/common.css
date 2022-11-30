@@ -74,7 +74,10 @@
     display: table;
     align-items: center;
 }
-p,h2{
+h3{
+    font-size: 18px;
+}
+p,h3{
     text-align: center
 }
 
